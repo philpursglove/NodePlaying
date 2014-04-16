@@ -1,0 +1,10 @@
+﻿{
+	"name": "NodePlaying",
+	"version": "0.0.1",
+	"description": "Node app for just playing & learning",
+	"dependencies": 
+	{
+		"express": "*",
+		"jade": "*"
+	}
+}
