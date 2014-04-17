@@ -19,8 +19,12 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Compile Include="server.js" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\result.jade" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="views\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
   <ProjectExtensions>
