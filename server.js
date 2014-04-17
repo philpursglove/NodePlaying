@@ -1,7 +1,11 @@
 var express = require('express');
 var app = express();
 
+// Set some express config up
+app.set('view engine', 'jade');
 app.use(express.bodyParser());
+app.use(express.logger('dev'));
+app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res)
 {
