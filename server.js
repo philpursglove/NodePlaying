@@ -9,7 +9,7 @@ app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res)
 {
-    res.send('<html><head><title>Node.js for fun and profit</title></head><body><h2>Node.js is server-side Javascript</h2><form method="post" action="/FormPost">Please enter your name:<br/><input type="text" id="NameTextBox" name="NameTextBox"/><input type="Submit"></form></body></html>');
+    res.render('layout');
 });
 
 app.post('/FormPost', function(req, res)
